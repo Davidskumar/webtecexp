@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapphire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="m-5 border-2 border-black">
+        <header class="flex justify-center items-center space-x-9 p-5">
+            <div>
+                <img class="rounded-full w-40"
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
+            <div class="text-5xl">
+                Sapphire Promotion Group
+            </div>
+        </header>
+        <div class="border-y-2 border-black p-3">
+            <div class="items-center">
+                <div class="px-10 flex">
+                    <table cellpadding="30"cellspacing="70" width="120" align="center">
+                        <tr>
+                        <td style="text-align: left"><a href="http://">Link1</a></td>
+                        <td> | </td>
+                        <td style="text-align: center"><a href="http://">Link2</a></td>
+                        <td> | </td>
+                        <td style="text-align: right"><a href="http://">Link3</a></td>
+                        <td style="text-align: right" >  <input type="text" placeholder="Search.." style="border:3px solid"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <section class="border-b-2 border-black">
+            <div class="flex space-x-9 items-center justify-center">
+                <div class="p-5">
+                    
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/pQzqJclLLRE" title="Sapphire Mining - The Natural Sapphire Company" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="text-base text-justify p-5 w-[60%]">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia vitae velit iusto rem rerum
+                    nostrum fugit. In praesentium magni maiores blanditiis ducimus natus, excepturi commodi repellat ab
+                    laudantium pariatur, ut fugit quaerat quisquam non eaque iusto ea. Assumenda consequatur voluptate
+                    veniam expedita deleniti placeat. Architecto labore, perspiciatis dolorem cum earum dicta natus
+                    aliquid sapiente adipisci minima corporis nobis quibusdam et perferendis necessitatibus nihil, dolor
+                    cumque alias. Deserunt nihil perferendis voluptatibus. Delectus laudantium eius dolorem ipsum a,
+                    corporis similique iure deleniti non pariatur hic recusandae, vel autem consequuntur reiciendis vero
+                    illum itaque, corrupti earum doloremque. Deserunt doloribus nesciunt rerum labore atque.
+                    <audio width="200" controls>
+                        <source src="https://soundcloud.com/shurkofficial/haunted?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/ogg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="flex items-center space-x-9 justify-center py-5">
+                <div>
+                    <form class="p-5 h-60">
+                        <fieldset class="border border-solid border-gray-500 p-3">
+                            <legend class="text-2xl"> Sign Up </legend>
+                            <div class="space-y-5">
+
+                                <div class="flex space-x-5 items-center">
+                                    <div>*Username: </div>
+                                    <div>
+                                        <input placeholder=" Username" class="border-2 border-black w-48" type="email"
+                                            name="username" id="">
+                                    </div>
+                                </div>
+                                <div class="flex space-x-5 items-center">
+                                    <div>*Password: </div>
+                                    <div class="items-center">
+                                        <input placeholder=" Password" class="border-2 border-black w-48"
+                                            type="password" name="password" id="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 justify-center items-center">
+                                <input class="border-2 border-black p-2 rounded-2xl" type="submit" value="Register">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="float-right">
+                    <div class="space-y-2">
+                        <div>Contact Us</div>
+                        <div>124 Sha Tin</div>
+                        <div>New Town</div>
+                        <div>Hong Kong</div>
+                        <div>
+                            <a href="mailto:davidsanjeet@karnya.edu.in">Mail Id: davidsanjeet@karunya.edu.in</a>
+                        </div>
+                        <div>
+                            <a href="tel:+91 9523594999">Phone No: (+91) (9523594999)</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.3598829721873!2d76.74187231480222!3d10.936163992213235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba866bd6aaaaaab%3A0xc650b8a75e7b51f0!2sKarunya%20Institute%20of%20Technology%20and%20Sciences%20(Deemed%20University)!5e0!3m2!1sen!2sin!4v1659195114429!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="grid place-items-center"><a href="Exp2page2.html">Page 2</a></div>
+</body>
+
+</html>
